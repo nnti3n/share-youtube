@@ -1,9 +1,9 @@
 <div>
   <%= form_with url: "/create", method: :post, class: "form" do |form| %>
-    <% if flash[:movie_error] %>
+    <% if @error.present? %>
       <div class="error-message">
         <ul>
-          <li><%= flash[:movie_error] %></li>
+          <li><%= @error %></li>
         </ul>
       </div>
     <% end %>

@@ -38,7 +38,7 @@ class MoviesController < ApplicationController
         render :new, status: :unprocessable_entity
       end
     rescue => e
-      flash[:movie_error] = e
+      @error = e
       render :new, status: :unprocessable_entity
     end
   end
