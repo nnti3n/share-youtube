@@ -1,0 +1,10 @@
+<%= render "menu" %>
+<main class="container">
+  <%= link_to sanitize("&larr; Back to movies"), "/" %>
+  <div class="header">
+    <h1>Share a movie</h1>
+  </div>
+  <%= turbo_frame_tag "share_movie" do %>
+    <%= render "form" %>
+  <% end %>
+</main>

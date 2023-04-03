@@ -1,0 +1,41 @@
+:root {
+  // All the previous variables
+
+  // Application colors
+  --color-primary: hsl(350, 67%, 50%);
+  --color-primary-rotate: hsl(10, 73%, 54%);
+  --color-primary-bg: hsl(0, 85%, 96%);
+  --color-secondary: hsl(101, 45%, 56%);
+  --color-secondary-rotate: hsl(120, 45%, 56%);
+  --color-tertiary: hsl(49, 89%, 64%);
+  --color-glint: hsl(210, 100%, 82%);
+
+  // Neutral colors
+  --color-white: hsl(0, 0%, 100%);
+  --color-background: hsl(30, 50%, 98%);
+  --color-light: hsl(0, 6%, 93%);
+  --color-dark: var(--color-text-header);
+
+  // All the previous variables
+
+  // Border radius
+  --border-radius: 0.375rem;
+
+  // Border
+  --border: solid 2px var(--color-light);
+
+  // Shadows
+  --shadow-large: 2px 4px 10px hsl(0 0% 0% / 0.1);
+  --shadow-small: 1px 3px 6px hsl(0 0% 0% / 0.1);
+
+  --space-xxxs: 0.25rem; // 4px
+  --space-xxs: 0.375rem; // 6px
+  --space-xs: 0.5rem; // 8px
+  --space-s: 0.75rem; // 12px
+  --space-m: 1rem; // 16px
+  --space-l: 1.5rem; // 24px
+  --space-xl: 2rem; // 32px
+  --space-xxl: 2.5rem; // 40px
+  --space-xxxl: 3rem; // 48px
+  --space-xxxxl: 4rem; // 64px
+}

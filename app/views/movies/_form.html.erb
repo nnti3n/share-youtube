@@ -1,0 +1,15 @@
+<div>
+  <%= form_with url: "/create", method: :post, class: "form" do |form| %>
+    <% if flash[:movie_error] %>
+      <div class="error-message">
+        <ul>
+          <li><%= flash[:movie_error] %></li>
+        </ul>
+      </div>
+    <% end %>
+    <%= form.label :url, "Youtube url:" %>
+    <%= form.text_field :url, class: "form__input", autofocus: true %>
+    <%= link_to "Cancel", "/", class: "btn btn--light" %>
+    <%= form.submit "Share", class: "btn btn--secondary" %>
+  <% end %>
+</div>

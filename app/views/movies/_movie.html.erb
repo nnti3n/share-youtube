@@ -1,0 +1,13 @@
+<div class="movie">
+  <%= link_to "https://youtube.com/watch?v=#{movie.youtube_id}", target: "_blank" do %>
+    <img src="<%= movie.image.present? ? movie.image : "https://placehold.co/300x225?text=Image%20not%20found" %>" alt="Movie Image" class="movie-image" width="300" height="225">
+  <% end %>
+  <div class="info">
+    <%= link_to "https://youtube.com/watch?v=#{movie.youtube_id}", target: "_blank" do %>
+      <h2 class="title">
+        <%= movie.title %>
+      </h2>
+    <% end %>
+    <div class="desc"> <%= movie.description %> </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+first:
+  title: First movie
+  description: This is the first movie
+  youtube_id: Ks-_Mh1QhMc
+  created_by: 1
+
+second:
+  title: Second movie
+  description: This is the second movie
+  youtube_id: Ks-_Mh1QhMc
+  created_by: 1
+
+third:
+  title: Third movie
+  description: This is the third movie
+  youtube_id: Ks-_Mh1QhMc
+  created_by: 1

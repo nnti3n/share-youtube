@@ -1,0 +1,7 @@
+<%= render "menu" %>
+<main class="container">
+  <%= turbo_frame_tag "share_movie" %>
+  <%= turbo_frame_tag "movies" do %>
+    <%= render @movies %>
+  <% end %>
+</main>

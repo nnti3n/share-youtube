@@ -1,0 +1,47 @@
+.movie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  margin-bottom: 48px;
+
+  img {
+    margin-right: 20px;
+  }
+
+  .info {
+    align-self: flex-start;
+  }
+
+  .desc {
+    -webkit-line-clamp: 4;
+    max-height: 225px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    color: rgba(117, 117, 117, 1);
+    font-size: 16px;
+    overflow: hidden;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .title {
+    letter-spacing: 0;
+    max-height: 56px;
+    line-height: 28px;
+    font-size: 22px;
+    -webkit-line-clamp: 2;
+    font-weight: 700;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(41, 41, 41, 1);
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
