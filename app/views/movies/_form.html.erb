@@ -7,9 +7,9 @@
         </ul>
       </div>
     <% end %>
-    <%= form.label :url, "Youtube url:" %>
+    <%= form.label :url, "Youtube URL:" %>
     <%= form.text_field :url, class: "form__input", autofocus: true %>
-    <%= link_to "Cancel", "/", class: "btn btn--light" %>
+    <%= link_to "Cancel", "/movies", class: "btn btn--light" %>
     <%= form.submit "Share", class: "btn btn--secondary" %>
   <% end %>
 </div>

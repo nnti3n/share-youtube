@@ -38,9 +38,14 @@
     overflow: hidden;
     color: rgba(41, 41, 41, 1);
     margin-top: 0;
+    margin-bottom: 4px;
   }
 
   a {
     text-decoration: none;
+  }
+
+  .author {
+    margin-top: 4px;
   }
 }

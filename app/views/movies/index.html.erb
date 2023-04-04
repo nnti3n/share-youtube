@@ -1,5 +1,12 @@
-<%= render "menu" %>
 <main class="container">
+  <div class="header">
+    <h2>Movies</h1>
+    <%= link_to "Share a movie",
+                "/share",   
+                class: "btn btn--primary",
+                data: { turbo_frame: "share_movie" }
+                %>
+  </div>
   <%= turbo_frame_tag "share_movie" %>
   <%= turbo_frame_tag "movies" do %>
     <%= render @movies %>

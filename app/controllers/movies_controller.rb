@@ -26,11 +26,12 @@ class MoviesController < ApplicationController
       image = data["items"][0]["snippet"]["thumbnails"]["standard"]["url"]
       youtube_id = data["items"][0]["id"]
 
-      @movie = Movie.new(title:, description:, youtube_id:, image:)
+      @movie =
+        Movie.new(title:, description:, youtube_id:, image:, user: current_user)
       if @movie.save
         respond_to do |format|
           format.html do
-            redirect_to "/", notice: "Movie was successfully created."
+            redirect_to "/movies", notice: "Movie was successfully created."
           end
           format.turbo_stream
         end

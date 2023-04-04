@@ -4,4 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :rememberable, :validatable
 
   has_many :movies, dependent: :destroy
+
+  def name
+    email.split("@").first.capitalize
+  end
 end

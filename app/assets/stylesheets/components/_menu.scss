@@ -1,25 +1,25 @@
 .menu {
-  position: fixed;
-  padding: 25px 0;
-  width: 100%;
-  border-bottom: solid 1px rgba(41, 41, 41, 1);
-  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-large);
+  padding: var(--space-xs) var(--space-m);
+  margin-bottom: var(--space-xxl);
+  background-color: (var(--color-white));
 
-  .content {
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    margin: 0 48px;
+  &__title {
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+    color: var(--color-text-header);
   }
 
-  h1 {
-    font-size: 30px;
-    font-weight: 700;
+  &__name {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: var(--space-s);
+    color: var(--color-text-header);
   }
 
-  a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  &__right {
+    margin-left: auto;
   }
 }

@@ -1,0 +1,14 @@
+<div class="menu">
+  <h1 class="menu__title">Funny Movies</h1>
+  <% if user_signed_in? %>
+    <div class="menu__name">
+      <%= current_user.name %>
+    </div>
+    <%= button_to "Sign out",
+                  destroy_user_session_path,
+                  method: :delete,
+                  class: "btn btn--dark" %>
+  <% else %>
+    <%= link_to "Sign in", new_user_session_path, class: "btn btn--dark menu__right" %>
+  <% end %>
+</div>
