@@ -12,7 +12,8 @@ Local dev env:
 Setup
 
 ```shell
-$ bundle
+$ bundle install
+$ bin/setup
 $ bin/dev
 ```
 
