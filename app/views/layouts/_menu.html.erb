@@ -1,5 +1,5 @@
 <div class="menu">
-  <h1 class="menu__title">Funny Movies</h1>
+  <%= link_to "Funny Movies", "/", class: "menu__title" %>
   <% if user_signed_in? %>
     <div class="menu__name">
       <%= current_user.name %>
