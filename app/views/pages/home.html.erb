@@ -1,5 +1,5 @@
 <main class="container">
-  <h1 class="home-title">A blazing fast movie sharer built with Hotwire</h1>
+  <h1 class="home-title">A blazing fast Youtube video sharer built with <%= link_to "Hotwired", "https://hotwired.dev/", target: "_blank" %></h1>
   <div class="home-action">
     <% if user_signed_in? %>
       <%= link_to "View movies", "/movies", class: "btn btn--dark" %>
