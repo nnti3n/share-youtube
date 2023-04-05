@@ -22,3 +22,5 @@ Run test
 ```shell
 $ bin/rails test:integration
 ```
+
+Powered by https://hotwired.dev/
