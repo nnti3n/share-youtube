@@ -31,9 +31,11 @@ class MoviesController < ApplicationController
       if @movie.save
         respond_to do |format|
           format.html do
-            redirect_to "/movies", notice: "Movie was successfully created."
+            redirect_to "/movies", notice: "Movie was successfully added."
           end
-          format.turbo_stream
+          format.turbo_stream do
+            flash.now[:notice] = "Movie was successfully added."
+          end
         end
       else
         render :new, status: :unprocessable_entity
