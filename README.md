@@ -1,24 +1,23 @@
-# README
+## Share youtube
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://share-youtube.fly.dev
 
-Things you may want to cover:
+### Prequisite
 
-* Ruby version
+Local dev env:
 
-* System dependencies
+- Install ruby
+- Install postgresql
 
-* Configuration
+Setup
 
-* Database creation
+```shell
+$ bundle
+$ bin/dev
+```
 
-* Database initialization
+Run test
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+$ bin/rails test:integration
+```
