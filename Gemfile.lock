@@ -96,6 +96,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dockerfile-rails (1.2.5)
+      rails
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -232,6 +234,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise (~> 4.9.2)
+  dockerfile-rails (>= 1.2)
   dotenv-rails
   jbuilder
   jsbundling-rails
